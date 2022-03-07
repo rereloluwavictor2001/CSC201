@@ -1,7 +1,7 @@
 #Given the assignment to write the program to calcualte the gpa of 3 differnt students using the following grades;
 #70-100 as A, 50-69 as B and 0-49 as E with a minimum of 5 courses for each student.
 #this works for just a fixed given set of data. no input!
-
+import time
 Grading = {"70-100": "A", "50-69": "B", "0-49": "E"}
 Grade= {"A": 5, "B": 4, "E": 1}
 Courses = {"MEE": 5, "CSC": 3, "MTH": 5, "STT": 4, "CPE":4}
@@ -35,5 +35,6 @@ while y < 4:
             creditPoints.append(creditPoint)
 
         x = x+1
-    print(f" Student{y} \nTotal Credit Point(TCP) : {sum(creditPoints)} \nTotal Workload(TWL) : {TotalWorkload} \nGPA : {sum(creditPoints)/TotalWorkload} \n")
+    print(f" Student {y} \nTotal Credit Point(TCP) : {sum(creditPoints)} \nTotal Workload(TWL) : {TotalWorkload} \nGPA : {sum(creditPoints)/TotalWorkload} \n")
+    time.sleep(2)
     y = y+1
